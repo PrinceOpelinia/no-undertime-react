@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  place-items: center;
+  font-family: "Arial";
+  justify-content: center;
+}
+
+.card {
+  padding: 2em;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),
+              -15px -15px 30px rgb(60, 60, 60);
+  min-width: 450px;
+  min-height: 700px;
+  margin-top: 50px;
+}
+

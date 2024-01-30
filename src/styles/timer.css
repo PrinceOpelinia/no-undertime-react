@@ -1,0 +1,96 @@
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    z-index:99;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.7);
+    --animation-color: #37FF8B;
+    --fs-size: 5em;
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: 100px;
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    z-index:99;
+    
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: px var(--animation-color);
+    font-size: 100px;
+    z-index:99;
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    z-index:99;
+    font-size: 100px;
+
+    
+
+    filter: drop-shadow(0 0 23px var(--animation-color))
+    
+    
+  }
+
+  .button:active {
+    /* transition: all 2s;*/
+    transition-delay: 1s; 
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(180deg);
+ }  
+
+  .timer-container{
+    z-index:99;
+    margin-top: 50%;
+  }
+
+  h2{
+    color: white;
+    /* text-shadow: 2px 2px 4px #37FF8B; */
+   font-family: Arial;
+    font-size: 100px;
+    margin-bottom: 0px;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    font-weight: 400;
+    border-right: 6px;
+}
+
+.web-green{
+    color: #37FF8B;
+    text-shadow: 2px 2px 4px #40d77f;
+    margin-top: 0px;
+    position: inherit;
+}
+
+  
+.time-left-text{
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-transform: uppercase;
+    --text-stroke-color: rgba(255,255,255,1);
+    z-index:99;
+}
